@@ -1,0 +1,7 @@
+create table ocorrencias(
+	codigo int auto_increment,
+    ocorrencia Varchar(300),
+    primary key(codigo)
+);
+
+select * from ocorrencias;
