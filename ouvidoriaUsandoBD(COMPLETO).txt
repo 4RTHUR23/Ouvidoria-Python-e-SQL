@@ -20,8 +20,8 @@ while opcao != 5:
             print("-Sem ocorrências, adicione uma primeiro")
         else:
             print("-Lista de ocorrências:")
-            for codigo, ocorrencia in sqlListagem:
-                print("-Código", codigo, "corresponde a ocorrência: ", ocorrencia)
+            for ocorrencia in sqlListagem:
+                print(ocorrencia)
 
     elif opcao == 2:
         novaOcorrencia = input("-Digite a ocorrência: ")
