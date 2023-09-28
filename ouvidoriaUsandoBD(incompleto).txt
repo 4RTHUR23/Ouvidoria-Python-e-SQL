@@ -46,10 +46,10 @@ while opcao != 5:
             for item in sqlListagem:
                 print("-", item[0], "possui código") #nao mostra o indice
 
-            codigoAlterar = input("Digite o codigo de qual ocorrencia voce quer alterar: ")
-            ocorrenciaUpdate = input("Digite a ocorrencia atualizada: ")
-            sqlUpdate = "update ocorrencias set ocorrencia = ocorrenciaUpdate where codigo = codigoAlterar"
-            dados = [ocorrenciaUpdate]
+            codigoAlterar = input("-Digite o codigo de qual ocorrência voce quer alterar: ")
+            ocorrenciaUpdate = input("-Digite a ocorrência atualizada: ")
+            sqlUpdate = "update ocorrencias set ocorrencia =  where codigo = "
+            dados = [codigoAlterar, ocorrenciaUpdate]
             metodoUpdate = atualizarBancoDados(conn, sqlUpdate, dados)
             print("deu certo")
 
@@ -57,7 +57,7 @@ while opcao != 5:
 
         print("As ocorrências cadastradas no sistema são :")
         for item in sqlListagem:
-            print("-", item[0], "possui código")
+            print("-", item[0], "possui código") #nao mostra o indice
 
         codigoPesquisado = int(input("-Digite o código da ocorrência para remover: "))
         sqldelete = "delete from ocorrencias where codigo = (%s)"
@@ -69,4 +69,4 @@ while opcao != 5:
     elif opcao != 5:
         print("-Opção Inválida")
 encerrarBancoDados(conn)
-print("------ Programa Encerrado ------ \n ")
+print("------ Programa Encerrado ------\n")
