@@ -1,0 +1,89 @@
+''' Sistema de Ouvidoria com Listagem, Cadastro, Exclusão e Alteração de Manifestações com Base em uma Estrutura de Dados Lista. '''
+
+opcao = 0 
+ocorrencias = []
+
+while opcao != 5:
+  print()
+  print("----- Sistema de Ouvidoria -----")
+  print()
+  print("1) Listar Ocorrências")
+  print("2) Cadastrar Ocorrência")
+  print("3) Alterar Ocorrência")
+  print("4) Excluir Ocorrência")
+  print("5) Sair")
+  print()
+  print("--------------------------------")
+  print()
+  opcao = int(input("- Quais das opções você deseja realizar? "))
+  print()
+  print("--------------------------------")
+  print()
+  
+  if opcao == 1:
+    if len(ocorrencias) == 0:
+      print("- Sem ocorrências no catálogo, adicione uma!")
+      
+    else:
+      print("- Lista de ocorrências:")
+      print()
+      for mensagens in ocorrencias:
+        print("- ", mensagens)
+        
+  elif opcao == 2:
+    novaOcorrência = input("- Digite a ocorrência: ")
+    ocorrencias.append(novaOcorrência)
+    print()
+    print("- Ocorrencia adicionada com sucesso!")
+    
+  elif opcao == 3:
+    if len(ocorrencias) == 0:
+      print("- Sem ocorrências, adicione uma usando a opção 2") 
+    
+    else:
+      print("- Lista de ocorrências:")
+      print()
+      
+      for i in range(len(ocorrencias)):
+        print("- Código", i+1, "corresponde a ocorrência:", ocorrencias[i])
+        print()
+        
+      codigoPesquisado = int(input("- Digite o código da ocorrência para alterar: "))
+      print()
+
+      if codigoPesquisado <= len(ocorrencias):
+        
+        novaOcorrência = input("- Digite a nova ocorrência: ")
+        ocorrencias[codigoPesquisado-1] = novaOcorrência
+        print()
+        print("- A ocorrência foi alterada com sucesso!")
+
+      else:
+        print("Esse código não existe. Tente novamente!")
+      
+  elif opcao == 4:
+    if len(ocorrencias) == 0:
+      print("- Sem ocorrências, adicione uma usando a Opção 2")
+      
+    else:
+      print("- Lista de ocorrências:")
+      
+      for i in range(len(ocorrencias)):
+        print("- Código", i+1, "corresponde a ocorrência:", ocorrencias[i])
+        
+      codigoPesquisado = int(input("- Digite o código da ocorrência para remover: "))
+
+      if codigoPesquisado <= len(ocorrencias):
+    
+        ocorrencias.pop(codigoPesquisado-1)
+        print("- Ocorrência removida com sucesso!")
+
+      else:
+        print("Esse código não existe. Tente novamente!")
+      
+  elif opcao != 5: 
+    print("Opção Inválida")
+
+print()
+print("-----Programa Encerrado-----")
+print()
