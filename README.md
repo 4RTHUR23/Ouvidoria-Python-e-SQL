@@ -10,6 +10,12 @@
 <h2>👉Objetivo do Trabalho</h1>
 <p>- O objetivo desse repositório e do seguinte projeto está pautado na criaçao de um Sistema de Ouvidoria utilizando apenas Python e SQL, algumas ferramentas foram usadas, como o Pycharm para gerenciar a linguagem de Python e conseguir realizar a integraçao com o Banco de Dados, para o uso do SQL foi utilizado o MySQL Workbench</p>
 <h2>👉Como Utilizar o Sistema</h1>
+<p>- Antes de tentar rodar o Sistema de Ouvidoria, certifique-se de alguns pontos importantes, segue abaixo:</p>
+<p>• Pycharm devidamente instalado e funcionando</p>
+<p>• MySQL Server e Workbench funcionando</p>
+<p>• Git istalado na sua máquina</p>
+<p>- Após esses passos atente-se a algumas instruçoes</p>
+<p></p>
 <p></p>
 <h2>👉Grupo</h1>
 <p> O grupo é composto pelos seguintes integrantes:</p>
