@@ -1,4 +1,4 @@
-from operacoesbd import *
+from operacoesBD import *
 
 conn = abrirBancoDados("127.0.0.1", "root", "011198", "ouvidoria_final")
 
@@ -9,7 +9,7 @@ while opcao != 5:
     print("----- Sistema de Ouvidoria -----")
     print("\n1) Listar Ocorrências\n2) Cadastrar Ocorrência\n3) Alterar Ocorrência\n4) Excluir Ocorrência\n5) Sair\n")
     print("--------------------------------")
-    opcao = int(input("-Quais das opções você deseja realizar? "))
+    opcao = int(input("-Qual das opções você deseja realizar? "))
     print()
 
     sqlconsulta = "select codigo, ocorrencia from ocorrencias"
@@ -21,7 +21,7 @@ while opcao != 5:
         else:
             print("-Lista de ocorrências:")
             for ocorrencia in sqlListagem:
-                print(ocorrencia)
+                print("-", ocorrencia[1])
 
     elif opcao == 2:
         novaOcorrencia = input("-Digite a ocorrência: ")
@@ -38,7 +38,7 @@ while opcao != 5:
         if len(sqlListagem) == 0:
             print("-Sem ocorrências, adicione uma usando a Opção 2")
         else:
-            print("As ocorrências cadastradas no sistema são:\n")
+            print("-As ocorrências cadastradas no sistema são:\n")
             for codigo, ocorrencia in sqlListagem:
                 print("-Código", codigo, "corresponde a ocorrência: ", ocorrencia)
 
