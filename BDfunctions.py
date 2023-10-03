@@ -1,3 +1,4 @@
+import mysql.connector
 
 def menu():
     print()
