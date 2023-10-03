@@ -77,13 +77,13 @@ def update(conn, ocorrenciaUpdate, codigoAlterar):
     print("-----------------------------------------------------")
     sqlUpdate = "update ocorrencias set ocorrencia = %s where codigo = %s"
     dados = [ocorrenciaUpdate, codigoAlterar]
-    metodoUpdate = atualizarBancoDados(conn, sqlUpdate, dados)
+    atualizarBancoDados(conn, sqlUpdate, dados)
     print("-Mensagem alterada com sucesso!")
 
 def delete(conn, codigoPesquisado):
     print("--------------------------------------------")
     sqldelete = "delete from ocorrencias where codigo = %s"
     dados = [codigoPesquisado]
-    metodoDelete = excluirBancoDados(conn, sqldelete, dados)
+    excluirBancoDados(conn, sqldelete, dados)
     print("\n-Ocorrência removida com sucesso!")
       
