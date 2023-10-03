@@ -47,15 +47,15 @@ def menu():
 
 def cadastro(conn, novaOcorrencia):
     if novaOcorrencia:
-        sqlInsert = "INSERT INTO ocorrencias (ocorrencia) VALUES (%s)"
+        sqlInsert = "insert into ocorrencias (ocorrencia) values (%s)"
         dados = [novaOcorrencia]
         if insertNoBancoDados(conn, sqlInsert, dados):
             print("--------------------------------")
-            print("- Ocorrência adicionada com sucesso!")
+            print("-Ocorrência adicionada com sucesso!")
         else:
-            print("- Erro ao adicionar ocorrência no banco de dados")
+            print("-Erro ao adicionar ocorrência no banco de dados")
     else:
-        print("- Nenhuma ocorrência informada")
+        print("-Nenhuma ocorrência informada")
 
 def listagem(sqlListagem):
     if len(sqlListagem) == 0:
@@ -86,3 +86,4 @@ def delete(conn, codigoPesquisado):
     dados = [codigoPesquisado]
     metodoDelete = excluirBancoDados(conn, sqldelete, dados)
     print("\n-Ocorrência removida com sucesso!")
+      
