@@ -25,7 +25,7 @@ while opcao != 5:
 
     elif opcao == 2:
         novaOcorrencia = input("-Digite a ocorrência: ")
-        if novaOcorrencia.strip():
+        if len(novaOcorrencia) > 0:
             sqlInsert = "insert into ocorrencias (ocorrencia) values (%s)"
             dados = [novaOcorrencia]
             metodoInsert = insertNoBancoDados(conn, sqlInsert, dados)
