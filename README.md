@@ -19,11 +19,11 @@
 <h2>👉Grupo</h1>
 <p> O grupo é composto pelos seguintes integrantes:</p>
 <p>• Eduardo Domingues</p>
-<p>• José Matheus</p>
+<p>• Arthur Vasconcelos</p>
 <p>• José Pereira</p>
 <p>• Dhonnatam Pereira</p>
 <p>• Debora Lima</p>
-<p>• Arthur Vasconcelos</p>
+<p>• José Matheus</p>
 <p>• Bianca de Moura</p>
 <p>- Quaisquer dúvidas ou questionamentos entrar em contato com algum integrante do grupo!</p>
 <h2>👉Licença</h1>
