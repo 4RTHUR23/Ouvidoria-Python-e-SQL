@@ -15,7 +15,7 @@
 <p>• MySQL Server e Workbench funcionando</p>
 <p>• Git istalado na sua máquina</p>
 <p>- Após esses passos atente-se a algumas instruçoes</p>
-<p>Para o funcionamento pleno do projeto, voce deve utilizar os 3 arquivos principais, fazer a instalacao corretamente do MySQL no projeto operacoesBD, e após isso começar a testar.</p>
+<p>Para o funcionamento do projeto, voce deve utilizar os 3 arquivos principais, operacoesBD, DBfunctions e o Sistema de Ouvidria, posteriormente fazer a instalacao correta do MySQL no projeto operacoesBD, e após isso começar a testar.</p>
 <p></p>
 <p></p>
 <h2>👉Grupo</h1>
