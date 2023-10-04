@@ -8,16 +8,14 @@
 <h2>- Criando um Sistema de Ouvidoria com Python e SQL para a competência de Python</h2>
 <h1>TÓPICOS DO PROJETO</h1>
 <h2>👉Objetivo do Trabalho</h1>
-<p>- O objetivo desse repositório e do seguinte projeto está pautado na criaçao de um Sistema de Ouvidoria utilizando apenas Python e SQL, algumas ferramentas foram usadas, como o Pycharm para gerenciar a linguagem de Python e conseguir realizar a integraçao com o Banco de Dados, para o uso do SQL foi utilizado o MySQL Workbench</p>
+<p>- O objetivo desse repositório e do seguinte projeto está pautado na criação de um Sistema de Ouvidoria utilizando apenas Python e SQL, algumas ferramentas foram usadas, como o Pycharm para gerenciar a linguagem de Python e conseguir realizar a integração com o Banco de Dados, para o uso do SQL foi utilizado o MySQL Workbench</p>
 <h2>👉Como Utilizar o Sistema</h1>
 <p>- Antes de tentar rodar o Sistema de Ouvidoria, certifique-se de alguns pontos importantes, segue abaixo:</p>
 <p>• Pycharm devidamente instalado e funcionando</p>
 <p>• MySQL Server e Workbench funcionando</p>
 <p>• Git istalado na sua máquina</p>
 <p>- Após esses passos atente-se a algumas instruçoes</p>
-<p>Para o funcionamento do projeto, voce deve utilizar os 3 arquivos principais, operacoesBD, DBfunctions e o Sistema de Ouvidria, posteriormente fazer a instalacao correta do MySQL no projeto operacoesBD, e após isso começar a testar.</p>
-<p></p>
-<p></p>
+<p>Para o funcionamento do projeto, você deve utilizar os 3 arquivos principais, operacoesBD, DBfunctions e o Sistema de Ouvidria, posteriormente fazer a instalação correta do MySQL no projeto operacoesBD, e após isso começar a testar.</p>
 <h2>👉Grupo</h1>
 <p> O grupo é composto pelos seguintes integrantes:</p>
 <p>• Eduardo Domingues</p>
