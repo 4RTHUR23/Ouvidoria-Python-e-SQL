@@ -1,4 +1,4 @@
-from operacoesBD import *
+from DBfunctions import *
 
 conn = abrirBancoDados("127.0.0.1", "root", "011198", "ouvidoria_final")
 

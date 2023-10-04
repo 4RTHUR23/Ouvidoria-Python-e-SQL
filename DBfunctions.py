@@ -1,4 +1,4 @@
-import mysql.connector
+from operacoesBD import *
 
 def menu():
     print()
@@ -48,4 +48,3 @@ def delete(conn, codigoPesquisado):
     dados = [codigoPesquisado]
     excluirBancoDados(conn, sqldelete, dados)
     print("\n-Ocorrência removida com sucesso!")
-      
